@@ -1,0 +1,79 @@
+page-convertSmilePoint {
+
+
+
+.toolbar-background {
+  background-color: #e3097d;
+}
+  
+[text-color="my-custom-color"] {
+    color: white;   
+}
+ion-icon {
+    font-size: 25px; //Preferred size here
+}
+// .tabs-md .tab-button[aria-selected=true] {
+//     color: #000000 !important;
+    
+// }
+
+.button{
+    border-radius: 12px;
+    text-transform: none;
+}
+.card{
+    border-radius: 12px;
+     width: 93%;
+   
+}
+.border{
+    border:12px;
+    color: map-get($colors,mtl);
+}
+ion-input {
+    border: 2px solid map-get($colors,mtl);
+    background: third;
+    border-radius: 12px;
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.item-inner {
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+ 
+    }
+.center{
+        margin-left: auto;
+        margin-right: auto;
+        display: block !important;
+      }
+.ion-grid {
+        height: 100%;
+        justify-content: center;
+    }
+.circle {
+        border-radius: 50%;
+    }
+input{
+        text-align:center;
+        font-size: 25px;
+        font-weight: bold;
+        color: map-get($colors,mtl);
+        
+     }
+.method-color{
+        color: rgb(253, 253, 252);
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 15px;
+        
+        }
+
+    }
+
+
+

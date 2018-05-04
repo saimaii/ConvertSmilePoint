@@ -1,0 +1,102 @@
+<ion-header>
+<ion-toolbar >
+    <div>
+  <ion-navbar>       
+      <ion-title>             
+            <span text-color="my-custom-color"> SmilePoint </span>
+         
+      </ion-title>       
+          <ion-buttons  right>              
+        <ion-icon text-color="my-custom-color" name="notifications"></ion-icon>
+        &nbsp;
+         <ion-icon text-color="my-custom-color" name="mail"></ion-icon>
+         &nbsp;
+         &nbsp;
+      </ion-buttons>  
+  </ion-navbar>
+</div>
+</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid text-center>
+        <ion-row>
+          <ion-col >   
+            <button ion-button  button color="mtl" block large>E-Sticker</button>
+          
+          <ion-card card>
+              <img src="img/Untitled-1.png" width="20" />
+              <ion-card-content>
+                  <h1 ion-text text-center color="mtl">{{currentEsticker}}</h1>      
+              </ion-card-content>
+            </ion-card>
+        </ion-col>
+
+    <ion-col>
+    
+      <button ion-button  button color="light" block large>Smile Point</button>
+    
+    <ion-card card>
+        <img src="img/Untitled-1.png" width="20" />
+        <ion-card-content>   
+          <h1 ion-text text-center color="mtl">{{currentSmilePoint}}</h1>         
+        </ion-card-content>
+      </ion-card>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+  <br>
+  <br>
+  <ion-grid>      
+         <ion-row>         
+          <ion-col col-start col-4 push-3 > 
+              <button ion-button icon-only name="remove-circle" (click)="decrement()" color="mtl" style="border-radius:100%; right:10px">
+                  <ion-icon name="remove" ></ion-icon>
+                </button>           
+          </ion-col>
+           <ion-col col-center no-padding>             
+              <ion-item float-left>
+                <ion-input  border type="text" value={{currentNumber}} style="max-width: 100%; "></ion-input>              
+              </ion-item>              
+            </ion-col>   
+            &nbsp;
+            &nbsp;
+             &nbsp;
+                <ion-col col-end col-4 push-0 style="padding-right:1px;">                     
+              <button ion-button icon-only name="add-circle" (click)="increment()" color="mtl" style="border-radius:100%; right:10px">
+              <ion-icon name="md-add" ></ion-icon>
+            </button>            
+          </ion-col> 
+        </ion-row> 
+    </ion-grid>
+    <br> 
+  <br>    
+    <ion-grid>  
+      <ion-row>         
+        <ion-col col-start col-2 pull-0></ion-col>
+        &nbsp;             
+         <ion-col col-center>                        
+              <button ion-button  button color="mtl" block large (click)="showConfirmAlert()"  style="left: 4px"><small>แลก Smile Point</small></button>                                      
+          </ion-col>           
+          &nbsp;
+           &nbsp;
+           &nbsp;
+        <ion-col col-end col-2 push-1></ion-col> 
+      </ion-row>
+  </ion-grid> 
+  <br> 
+  <br>
+  <h3 ion-text text-center color="mtl">800 SmilePoint  =   1 E-Sticker</h3>    
+  <ion-grid>
+      <ion-row>
+        <ion-col> 
+          <button ion-button  button color="mtl" block large><small>ตรวจสอบคะแนน<br>Smile Point</small></button>       
+      </ion-col>
+  <ion-col>  
+    <button ion-button  button color="mtl" block large onclick="window.open('https://google.com', '_self', 'location=yes','footer=yes'); return false;"><small>สิทธิพิเศษสำหรับลูกค้า<br>เมืองไทย Smile Club </small></button>  
+</ion-col>
+</ion-row>
+</ion-grid>    
+</ion-content>
+
+  

@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-toolbar >
+        <div>
+      <ion-navbar>       
+          <ion-title>             
+                <span text-color="my-custom-color">หน้าหลัก</span>
+             
+          </ion-title>       
+              <ion-buttons  right>              
+            <ion-icon text-color="my-custom-color" name="notifications"></ion-icon>
+            &nbsp;
+             <ion-icon text-color="my-custom-color" name="mail"></ion-icon>
+             &nbsp;
+             &nbsp;
+          </ion-buttons>  
+      </ion-navbar>
+    </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+        <ion-slides pager>
+                <ion-slide *ngFor="let slide of slides">
+                  <br>
+                    <ion-buttons end>
+                        Skip
+                      <!-- <button ion-button btn color="">Skip</button> -->
+                        &nbsp;
+                        &nbsp;
+                    </ion-buttons>
+                  
+                  <img [src]="slide.image" class="slide-image"/>
+                  <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+                  <p [innerHTML]="slide.description"></p>
+                </ion-slide>
+                <ion-slide>
+                  
+                  <img src="img/christmas.png" class="slide-image"/>
+                  <h2 class="slide-title">Ready to Play?</h2>
+                  <button ion-button large clear icon-end color="primary">
+                    Continue
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </button>
+                </ion-slide>
+              </ion-slides>
+</ion-content>
